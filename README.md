@@ -3,19 +3,16 @@ Notre projet consiste en la détection d'anomalies en cyber sécurité via une p
 
 
 # 💼 DETECTION D'ANOMALIE DE CYBERSECURITE AVEC IA ET ML
-Le projet php de la tour d'hanoi donné par M. Konan KAN 😎
+Notre projet a un potentiel significatif sur la sécurité et la protection des données sensibles des entreprises contre les cyberattaques.
 
-## [Contribuez au projet sur Github](https://github.com/degrize/PHP-Hanoi-ing2)
-### 💼 Tour d'Hanoï
+##### 👌 Algorithme implémenté
 
-##### 👌 Fonctionnalités
-
-- L'utilisateur pourra utiliser la sourie de son ordinateur pour déplacer les disques et avoir la possibilité d'utiliser son doigt si celui ci possède un écran tactile
-- Rendre le jeu disponible sur un format adapter Web ou Mobile
-- Implémenter le système des historiques
-- Ajouter la fonctionnalité d'authentification &
-- Envoyer les identifications de connexions par e-mail lorsque celui-ci a oublié son mot de passe
-- Envoyer un mail au joueur lorsqu'un autre joueur à dépasser son score (meilleur score)
+Détection d'anomalies basée sur les clusters (K-mean)
+- Répartition des données en catégories puis Enveloppe Gaussienne/Elliptique sur chaque catégorie séparément
+- Chaîne de Markov
+- Forêt d'isolement
+- Une classe SVM
+- RNN (comparaison entre prédiction et réalité)
   💙
 
 
