@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--HACKATHON ADW-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FIREBASE ===============-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
+
+    <title>Dashboard anomalie</title>
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="Images/logo_CyberAfricaForums.png" alt="">
+            </div>
+
+            <span class="logo_name">Hackathon</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="#">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dahsboard</span>
+                </a></li>
+                <br>
+                <li><a href="#">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Sources d'anomalies</span>
+                </a></li>
+                <br>
+                <li><a href="#">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Users à l'origine des anomalies</span>
+                </a></li>
+                <br>
+                <li><a href="#">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">La précision du modèle</span>
+                    </a>
+                </li>
+                <li>
+                    <div class="logo-image2">
+                        <img src="Images/logo2.jpg" alt="">
+                    </div>
+                </li>
+
+            </ul>
+            
+            <ul class="logout-mode">
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Nuit Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Rechercher ici...">
+            </div>
+            
+            <img src="Images/log-inp.jpg" alt="">
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">Dashboard</span>
+                </div>
+
+                <div class="boxes">
+                    <div class="box box1">
+                        <i class="uil uil-thumbs-up"></i>
+                        <span class="text">Anomalies</span>
+                        <span class="number" id="nbreAnomalie">
+
+                        </span>
+                    </div>
+                    <div class="box box2">
+                        <i class="uil uil-comments"></i>
+                        <span class="text">Attaques</span>
+                        <span class="number" id="nombreAttaque">
+
+                        </span>
+                    </div>
+                    <div class="box box3">
+                        <i class="uil uil-share"></i>
+                        <span class="text">Suspect</span>
+                        <span class="number" id="nombreSuspect">
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main">
+                <div class="activity">
+                    <div class="title">
+                        <i class="uil uil-clock-three"></i>
+                        <span class="text">Récentes Activités</span>
+                    </div>
+                    <div class="">
+                        <canvas id="myChartBar"></canvas>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="graphes/graphe.js"></script>
+
+</body>
+</html>
